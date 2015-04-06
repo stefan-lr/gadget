@@ -3,6 +3,27 @@
   <ModulePrefs title="hello world example" /> 
   <Content type="html">
      <![CDATA[ 
+		<script language="javascript" type="text/javascript" src="http://www.flotcharts.org/flot/jquery.js"></script>
+		<script language="javascript" type="text/javascript" src="http://www.flotcharts.org/flot/jquery.flot.js"></script>
+			<script type="text/javascript">
+
+	$(function() {
+
+		var d1 = [];
+		for (var i = 0; i < 14; i += 0.5) {
+			d1.push([i, Math.sin(i)]);
+		}
+
+		var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+
+		// A null signifies separate line segments
+
+		var d3 = [[0, 12], [7, 12], null, [7, 2.5], [12, 2.5]];
+
+		$.plot("#placeholder", [ d1, d2, d3 ]);
+
+	});
+	<div id="placeholder" class="demo-placeholder"></div>
        Hello, world!
      ]]>
   </Content> 
