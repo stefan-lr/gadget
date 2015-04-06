@@ -3,8 +3,8 @@
   <ModulePrefs title="hello world example" /> 
   <Content type="html">
      <![CDATA[ 
-		<script language="javascript" type="text/javascript" src="http://www.flotcharts.org/flot/jquery.js"></script>
-		<script language="javascript" type="text/javascript" src="http://www.flotcharts.org/flot/jquery.flot.js"></script>
+		<script language="javascript" type="text/javascript" src="https://www.flotcharts.org/flot/jquery.js"></script>
+		<script language="javascript" type="text/javascript" src="https://www.flotcharts.org/flot/jquery.flot.js"></script>
 			<script type="text/javascript">
 
 	$(function() {
@@ -23,6 +23,7 @@
 		$.plot("#placeholder", [ d1, d2, d3 ]);
 
 	});
+	</script>
 	<div id="placeholder" class="demo-placeholder"></div>
        Hello, world!
      ]]>
